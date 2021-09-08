@@ -48,6 +48,15 @@ h1 {
 }
 
 #foot {
-    height: 25%;
     background-color: #282a36;
+}
+
+#title{
+    height: 25%;
+}
+#menu{
+    background-color: #ffb86c;
+}
+.center{
+    text-align: center;
 }
