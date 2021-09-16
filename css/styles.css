@@ -45,9 +45,10 @@ h1 {
 #nav {
     height: 30%;
     background-color: #282a36;
-    margin: 0%;
     position: relative;
     width: 100%;
+    left: 0;
+    top: 0;
 }
 
 #foot {
@@ -107,14 +108,14 @@ h1 {
 
 
 .sidenav {
-    width: 180px; /* original 130px */
+    width: 20%; /* original 130px */
     position: relative;
     z-index: 1;
-    top: 20px;
-    left: 10px;
+    top: 20px; /* original 20px */
+    left: 10px; /* original 10px */
     background: #282a36;
     overflow-x: hidden;
-    padding: 8px 0;
+    padding: 8px 0; /* original 8px 0 */
     float: left;
 }
 
@@ -126,7 +127,7 @@ h1 {
 }
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 6px 8px 6px 16px;  /* original 6px 8px 6px 16px */
     text-decoration: none;
     font-size: 25px;
     color: #ffb86c;
@@ -138,7 +139,7 @@ h1 {
 }
 
 .main {
-    margin-left: 190px; /* Same width as the sidebar + left position in px */
+    margin-left: 22%; /* Same width as the sidebar + left position in px */
     /*font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
 }
