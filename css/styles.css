@@ -46,10 +46,16 @@ h1 {
     height: 25%;
     background-color: #282a36;
     margin: 0%;
+    position: relative;
 }
 
 #foot {
     background-color: #282a36;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .webtitle{
@@ -70,7 +76,7 @@ h1 {
 
 #sidebar{
     text-align:left;
-    width: 10%;
+    width: 25%;
     background-color: #282a36;
     margin: 5%;
     float: left;
@@ -78,4 +84,11 @@ h1 {
 
 .content {
     margin-left: 5%;
+}
+
+.nav-elements {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
