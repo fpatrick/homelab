@@ -83,7 +83,7 @@ h1 {
 }
 
 .content {
-    margin-left: 5%;
+    margin: 5%;
 }
 
 .nav-elements {
@@ -91,4 +91,15 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.bar-elements {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.no-point{
+    list-style-type: none;
 }
