@@ -56,6 +56,7 @@ h1 {
     left: 0;
     bottom: 0;
     width: 100%;
+    height:60px;
 }
 
 #webtitle{
@@ -106,7 +107,7 @@ h1 {
 
 
 .sidenav {
-    width: 130px;
+    width: 180px; /* original 130px */
     position: relative;
     z-index: 1;
     top: 20px;
@@ -137,13 +138,13 @@ h1 {
 }
 
 .main {
-    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    margin-left: 190px; /* Same width as the sidebar + left position in px */
     /*font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
 }
 
 .main p{
-    font-size: 28px;
+    font-size: 21px;
 }
 
 @media screen and (max-height: 450px) {
