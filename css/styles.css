@@ -201,3 +201,7 @@ code {
     padding: 5px;
     border-radius: 25px;
 }
+
+pre {
+    background-color: #282a36;
+}
