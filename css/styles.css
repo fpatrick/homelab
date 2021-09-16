@@ -209,11 +209,10 @@ pre {
     overflow: auto;
 }
 
-pre > code{
+pre code{
     padding: 0px;
     border-radius: 0px;
 
     display: block;
-    padding: 1rem;
     word-wrap: normal;
 }
