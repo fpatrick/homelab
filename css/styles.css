@@ -182,6 +182,10 @@ h2 {
         /*font-size: 28px; /* Increased text to enable scrolling */
         padding: auto;
     }
+
+    #nav {
+        height: 40%;
+    }
 }
 
 code {
