@@ -163,7 +163,7 @@ h1 {
     visibility: hidden; 
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .sidenav {
         width: 100%; /* original 130px */
         top: 20px; /* original 20px */
