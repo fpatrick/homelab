@@ -162,3 +162,14 @@ h1 {
     margin-bottom: 110px; /* how high is your footer */
     visibility: hidden; 
 }
+
+@media (max-width: 1000px) {
+    .sidenav {
+        width: 100%; /* original 130px */
+        top: 20px; /* original 20px */
+        left: 10px; /* original 10px */
+        background: #282a36;
+        overflow-x: hidden;
+        padding: 8px 0; /* original 8px 0 */
+    }
+}
