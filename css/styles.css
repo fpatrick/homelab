@@ -60,7 +60,7 @@ h1 {
 
 #webtitle{
     text-align: center;
-    font-size: 32px;
+    font-size: 48px;
     font-weight: bold;
 
 }
@@ -69,10 +69,6 @@ h1 {
 }
 .center{
     text-align: center;
-}
-
-.content {
-    margin: 5%;
 }
 
 .nav-elements {
@@ -84,9 +80,9 @@ h1 {
 
 
 .btn-group button {
-    background-color: #ffb86c; /* Green background */
-    border: 1px solid #e69e52; /* Green border */
-    color: #282a36; /* White text */
+    background-color: #414458; /* Green background */
+    border: 1px solid #626684; /* Green border */
+    color: #f8f8f2; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     float: left; /* Float the buttons side by side */
@@ -104,7 +100,7 @@ h1 {
 
   /* Add a background color on hover */
 .btn-group button:hover {
-    background-color: #e69e52;
+    background-color: #626684;
 }
 
 
