@@ -52,10 +52,10 @@ h1 {
     background-color: #282a36;
 }
 
-#title{
+.webtitle{
     margin: 0%;
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -72,5 +72,10 @@ h1 {
     text-align:left;
     width: 10%;
     background-color: #282a36;
-    margin: 5px;
+    margin: 5%;
+    float: left;
+}
+
+.content {
+    margin-left: 5%;
 }
