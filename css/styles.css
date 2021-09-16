@@ -78,7 +78,7 @@ h1 {
     width: 25%;
     background-color: #282a36;
     margin: 5%;
-    float: left;
+    position: relative;
 }
 
 .content {
