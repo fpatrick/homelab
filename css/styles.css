@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-    color: #50fa7b;
+    color: #bd93f9;
 }
 
 #nav {
@@ -53,6 +53,7 @@ h2 {
     width: 100%;
     left: 0;
     top: 0;
+    padding: 0px;
 }
 
 #foot {
@@ -122,6 +123,7 @@ h2 {
     overflow-x: hidden;
     padding: 8px 0; /* original 8px 0 */
     float: left;
+    border-radius: 25px;
 }
 
 /* Clear floats (clearfix hack) */
@@ -173,9 +175,7 @@ h2 {
         width: 100%; /* original 130px */
         top: 20px; /* original 20px */
         left: 10px; /* original 10px */
-        background: #282a36;
-        overflow-x: hidden;
-        padding: 8px 0; /* original 8px 0 */
+        margin-bottom: 30px; /* original 8px 0 */
     }
     .main {
         margin: 1%; /* Same width as the sidebar + left position in px */
