@@ -121,6 +121,7 @@ h1 {
     background: #44475a;
     overflow-x: hidden;
     padding: 8px 0;
+    float: left;
 }
 
 .sidenav a {
