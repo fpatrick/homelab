@@ -10,4 +10,53 @@
         Reinicie e execute o seguinte codigo para confirmar que swap agora esta zerado:
     </p>
     <code>free -m</code>
+    <h2>Fazer montagem do HD Externo</h2>
+    <p>Recomendo seguir a documentacao oficial que e muito detalhada caso seu hd esteja formatado em ext4, ntfs, etc. Nao esqueca de fazer a parte para montar automaticamente apos reboot. https://www.raspberrypi.org/documentation/configuration/external-storage.md</p>
+    <h2>Montar SMB</h2>
+    <p>
+        Instala o SMB
+    </p>
+    <code>
+        sudo apt-get install samba samba-common-bin
+    </code>
+    <p>
+        Cria a pasta que deseja compartilhar no SMB(ou nao, caso queira utilizar que ja existe), exemplo:
+    </p>
+    <code>
+        mkdir /compartilhado
+    </code>
+    <p>
+        Edita o arquivo de configuracao do smb para adicionar a pasta que criamos:
+    </p>
+    <code>
+        sudo nano /etc/samba/smb.conf
+    </code>
+    <p>
+        Aperta a tecla page down ate descer ao final do arquivo e adicione isso (editando a primeira linha com o nome que quiser e a segunda com o caminho da pasta que quer compartilhar):
+    </p>
+    <pre>
+        <code>
+            [raspsmb]
+            path = /compartilhado
+            writeable=Yes
+            create mask=0777
+            directory mask=0777
+            public=no
+        </code>
+    </pre>
+    <p>
+        Aperte as teclas Ctrl + X, depois y depois enter para salvar a configuracao. Crie um usuario para acesso do smb com o nome que desejar (no exemplo usado, usuario pi):
+    </p>
+    <code>
+        sudo smbpasswd -a pi
+    </code>
+    <p>
+        Por fim reinicie o servico:
+    </p>
+    <code>
+        sudo systemctl restart smbd
+    </code>
+    <code>
+        Voce pode acessar abrindo no explorador de arquivo do windows o endereco ** \\ip.do.seu.raspberry\raspsmb **(ou nome que voce deu na primeira linha da configuracao)
+    </code>
 </div>
