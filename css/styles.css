@@ -62,7 +62,7 @@ h2 {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 5%;
+    padding-top: 25px;
 }
 
 #webtitle{
@@ -192,5 +192,5 @@ code {
     background-color: #282a36;
     color: #ff79c6;
     font-size: 21px;
-    padding: 5px;
+    padding: 10px;
 }
