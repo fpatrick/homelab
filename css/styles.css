@@ -65,7 +65,7 @@ h2 {
 #foot {
     background-color: #282a36;
     text-align: center;
-    position: relative;
+
     left: 0;
     bottom: 0;
     width: 100%;
@@ -212,7 +212,7 @@ pre {
 pre > code{
     padding: 0px;
     border-radius: 0px;
-    
+
     display: block;
     padding: 1rem;
     word-wrap: normal;
