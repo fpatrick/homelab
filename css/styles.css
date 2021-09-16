@@ -45,7 +45,7 @@ h1 {
 #nav {
     height: 30%;
     background-color: #282a36;
-    position: relative;
+    /*position: fixed; */
     width: 100%;
     left: 0;
     top: 0;
@@ -54,7 +54,7 @@ h1 {
 #foot {
     background-color: #282a36;
     text-align: center;
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%;
