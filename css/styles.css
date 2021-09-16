@@ -75,7 +75,6 @@ h1 {
 }
 
 #sidebar{
-    text-align:left;
     width: 25%;
     background-color: #282a36;
     margin: 5%;
@@ -94,7 +93,6 @@ h1 {
 }
 
 .bar-elements {
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -102,4 +100,8 @@ h1 {
 
 .no-point{
     list-style-type: none;
+}
+
+.bar-item {
+    margin-top: 1%;
 }
