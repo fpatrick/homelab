@@ -58,13 +58,10 @@ h1 {
     width: 100%;
 }
 
-.webtitle{
-    margin: 0%;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+#webtitle{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
 
 }
 #menu{
@@ -118,7 +115,7 @@ h1 {
     z-index: 1;
     top: 20px;
     left: 10px;
-    background: #44475a;
+    background: #282a36;
     overflow-x: hidden;
     padding: 8px 0;
     float: left;
