@@ -74,12 +74,6 @@ h1 {
     text-align: center;
 }
 
-#sidebar{
-    width: 25%;
-    background-color: #282a36;
-    margin: 5%;
-}
-
 .content {
     margin: 5%;
 }
@@ -91,27 +85,11 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-.bar-elements {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.no-point{
-    list-style-type: none;
-}
-
-.bar-item {
-    margin-top: 1%;
-}
-
-
-
 
 .btn-group button {
     background-color: #ffb86c; /* Green background */
     border: 1px solid #e69e52; /* Green border */
-    color: #f8f8f2; /* White text */
+    color: #282a36; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     float: left; /* Float the buttons side by side */
@@ -130,4 +108,40 @@ h1 {
   /* Add a background color on hover */
 .btn-group button:hover {
     background-color: #e69e52;
+}
+
+
+
+.sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+
+.main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
