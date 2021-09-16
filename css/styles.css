@@ -78,7 +78,6 @@ h1 {
     width: 25%;
     background-color: #282a36;
     margin: 5%;
-    position: relative;
 }
 
 .content {
@@ -104,4 +103,31 @@ h1 {
 
 .bar-item {
     margin-top: 1%;
+}
+
+
+
+
+.btn-group button {
+    background-color: #ffb86c; /* Green background */
+    border: 1px solid #e69e52; /* Green border */
+    color: #f8f8f2; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+} 
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+  /* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #e69e52;
 }
