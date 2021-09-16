@@ -19,13 +19,31 @@
     </script>
     <!--end of Navigation bar-->
 
-    <div>
-        <p>
-            aqui vai o corpo do site
-        </p>
+
+    <!--Side bar-->
+    <div id="sidebar-placeholder">
+    </div>
+    
+    <script>
+        $(function(){
+            $("#sidebar-placeholder").load("sidebar.html");
+        });
+    </script>
+    <!--end of Side bar-->
+
+    <!--Content-->
+    <div id="content-placeholder">
     </div>
 
-    <!--Navigation bar-->
+    <script>
+        $(function(){
+            $("#content-placeholder").load("pages/primeiras.html");
+        });
+    </script>
+    <!--end of content-->
+
+
+    <!--Foot-->
     <div id="foot-placeholder">
     </div>
 
@@ -34,6 +52,6 @@
             $("#foot-placeholder").load("foot.html");
         });
     </script>
-    <!--end of Navigation bar-->
+    <!--end of foot-->
 </body>
 </html>
