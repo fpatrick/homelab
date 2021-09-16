@@ -64,12 +64,11 @@ h2 {
 #foot {
     background-color: #282a36;
     text-align: center;
-    /* position: fixed; */
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     padding-top: 25px;
-    padding-bottom: 0px;
 }
 
 #webtitle{
@@ -172,7 +171,7 @@ h2 {
 }
 
 .spacer{
-    margin-bottom: 110px; /* how high is your footer */
+    margin-bottom: 30px; /* how high is your footer */
     visibility: hidden; 
 }
 
@@ -204,4 +203,10 @@ code {
 
 pre {
     background-color: #282a36;
+    border-radius: 25px;
+}
+
+pre code{
+    padding: 0px;
+    border-radius: 0px;
 }
