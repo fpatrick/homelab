@@ -39,6 +39,7 @@ body {
 }    
 p {
     color: #f8f8f2;
+    justify: auto;
 }
 
 h1 {
@@ -67,7 +68,7 @@ h2 {
     bottom: 0;
     width: 100%;
     padding-top: 25px;
-    border: 0;
+    padding-bottom: 0px;
 }
 
 #webtitle{
@@ -197,4 +198,6 @@ code {
     color: #ff79c6;
     font-size: 21px;
     padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
 }
