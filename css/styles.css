@@ -36,6 +36,7 @@ html, body {
 
 body {
     background-color: #44475a;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }    
 p {
     color: #f8f8f2;
