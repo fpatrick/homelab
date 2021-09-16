@@ -43,7 +43,7 @@ h1 {
 }
 
 #nav {
-    height: 25%;
+    height: 30%;
     background-color: #282a36;
     margin: 0%;
     position: relative;
@@ -117,6 +117,13 @@ h1 {
     float: left;
 }
 
+/* Clear floats (clearfix hack) */
+.sidenav:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -133,6 +140,10 @@ h1 {
     margin-left: 140px; /* Same width as the sidebar + left position in px */
     /*font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
+}
+
+.main p{
+    font-size: 28px;
 }
 
 @media screen and (max-height: 450px) {
