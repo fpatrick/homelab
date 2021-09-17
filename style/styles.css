@@ -40,8 +40,7 @@ body {
 }    
 p {
     color: #f8f8f2;
-    text-align: justify;
-    text-justify: inter-word;
+    text-justify: auto;
 }
 
 h1 {
