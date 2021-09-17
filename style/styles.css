@@ -58,11 +58,11 @@ h2 {
 #toptitle{
     height: 30%;
     background-color: #282a36;
-    position: relative;
+    /* position: relative;
     width: 100%;
     left: 0;
     top: 0;
-    padding: 0px;
+    padding: 0px; */
 }
 
 #foot {
@@ -102,7 +102,7 @@ h2 {
     color: #f8f8f2; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
-    float: left; /* Float the buttons side by side */
+    /* float: left; /* Float the buttons side by side */
 }
 
 .btn-cat button:not(:last-child) {
