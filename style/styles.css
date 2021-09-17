@@ -145,7 +145,7 @@ h2 {
 .sidenav a {
     padding: 6px 8px 6px 16px;  /* original 6px 8px 6px 16px */
     text-decoration: none;
-    font-size: 25px;
+    font-size: 21px;
     color: #ffb86c;
     display: block;
 }
@@ -161,7 +161,7 @@ h2 {
 }
 
 .main p{
-    font-size: 21px;
+    font-size: 18px;
 }
 
 @media screen and (max-height: 450px) {
@@ -200,7 +200,7 @@ h2 {
 code {
     background-color: #282a36;
     color: #ff79c6;
-    font-size: 21px;
+    font-size: 18px;
     padding: 5px;
     border-radius: 25px;
     font-family: monospace, monospace;
