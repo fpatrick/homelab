@@ -215,7 +215,4 @@ pre {
 pre code{
     padding: 0px;
     border-radius: 0px;
-
-    display: block;
-    word-wrap: normal;
 }
