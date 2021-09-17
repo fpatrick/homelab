@@ -47,11 +47,15 @@ h1 {
     color: #50fa7b;
 }
 
+.green {
+    color: #50fa7b;
+}
+
 h2 {
     color: #bd93f9;
 }
 
-#nav {
+#toptitle{
     height: 30%;
     background-color: #282a36;
     position: relative;
@@ -84,7 +88,7 @@ h2 {
     text-align: center;
 }
 
-.nav-elements {
+.toptitle-elements {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -92,7 +96,7 @@ h2 {
 }
 
 
-.btn-group button {
+.btn-cat button {
     background-color: #414458; /* Green background */
     border: 1px solid #626684; /* Green border */
     color: #f8f8f2; /* White text */
@@ -101,18 +105,18 @@ h2 {
     float: left; /* Float the buttons side by side */
 }
 
-.btn-group button:not(:last-child) {
+.btn-cat button:not(:last-child) {
     border-right: none; /* Prevent double borders */
 } 
 /* Clear floats (clearfix hack) */
-.btn-group:after {
+.btn-cat:after {
     content: "";
     clear: both;
     display: table;
 }
 
   /* Add a background color on hover */
-.btn-group button:hover {
+.btn-cat button:hover {
     background-color: #626684;
 }
 
