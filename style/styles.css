@@ -208,6 +208,7 @@ code {
     padding: 5px;
     border-radius: 25px;
     font-family: monospace, monospace;
+    margin-bottom: 10px;
 }
 
 pre {
