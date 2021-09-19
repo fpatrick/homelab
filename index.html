@@ -28,28 +28,36 @@
         </div>
     </header>
     <main>
-            <!--Side bar-->
-            <div id="sidebar-placeholder">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-4 background-background">
+                    <div class="position-sticky" style="top: 2rem;">
+                        <!--Side bar-->
+                        <div id="sidebar-placeholder">
+                        </div>
+
+                        <script>
+                            $(function(){
+                                $("#sidebar-placeholder").load("sidebar.html");
+                            });
+                        </script>
+                        <!--end of Side bar-->
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!--Main-->
+                    <div id="content-placeholder">
+                    </div>
+
+                    <script>
+                        $(function(){
+                            $("#content-placeholder").load("pages/primeiras.html");
+                        });
+                    </script>
+                    <!--end of Main-->
+                </div>
             </div>
-
-            <script>
-                $(function(){
-                    $("#sidebar-placeholder").load("sidebar.html");
-                });
-            </script>
-            <!--end of Side bar-->
-
-            <!--Content-->
-            <div id="content-placeholder">
-            </div>
-
-            <script>
-                $(function(){
-                    $("#content-placeholder").load("pages/primeiras.html");
-                });
-            </script>
-            <!--end of content-->
-        
+        </div>
     </main>
     <footer class="background-background">
         <!--Foot-->
