@@ -5,9 +5,18 @@
     color:#282a36;
 }
 
+.background-background {
+    background-color: #282a36;
+}
+
 .deep {
     color:#383a59;
 }
+
+.deep-background {
+    background-color:#383a59;
+}
+
 .navy {
     color:#44475a;
 }
@@ -39,7 +48,7 @@ html, body {
 
 
 body {
-    background-color: #44475a;
+    background-color: #383a59;
     /* font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif; */
 }    
 p {
@@ -56,11 +65,11 @@ h1 {
 }
 
 h2 {
-    color: #50fa7b;
+    color: #ffb86c;
 }
 
 h3 {
-    color: #bd93f9;
+    color: #ffb86c;
 }
 
 #toptitle{
@@ -157,7 +166,7 @@ h3 {
     padding: 6px 8px 6px 16px;  /* original 6px 8px 6px 16px */
     text-decoration: none;
     font-size: 21px;
-    color: #ffb86c;
+    color: #bd93f9;
     display: block;
 }
 
