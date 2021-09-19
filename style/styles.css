@@ -218,6 +218,7 @@ pre {
     background-color: #282a36;
     border-radius: 25px;
     overflow: auto;
+    color: #ff79c6;
 }
 
 pre code{
