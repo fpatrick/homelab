@@ -13,17 +13,21 @@
     <p>
         Extremamente recomendado, especialmente para quem usa cartao SD. Por padrao o raspbian os vem com 100 MB de memoria swap ativado. Caso voce esteja utilizando cartao SD, SSD ou tenha um raspberry com no minimo 4GB de ram, e recomendado que o swap deja desativado. Por que? Com 4 GB de ram voce difilmente ira precisar do swap, caso esteja utilizando SD ou SSD e ainda pior, pois ele encurta a vida util refazendo escritas. Para desativar execute o codigo:
     </p>
-    <div class="rounded background-background">
+    <div class="rounded background-background mb-3">
         <div class="mt-1 mf-1" style="position: relative; float: right;">
             <button id="btn" type="button" class="btn btn-outline-light btn-sm btn-clipboard" data-clipboard-target="#um">Copiar</button>
         </div>
         <kbd id="um" class="command rounded">sudo systemctl disable dphys-swapfile.service</kbd>
     </div>
-
     <p>
         Reinicie e execute o seguinte codigo para confirmar que swap agora esta zerado:
     </p>
-    <code class="rounded">free -m</code>
+    <div class="rounded background-background mb-3">
+        <div class="mt-1 mf-1" style="position: relative; float: right;">
+            <button id="btn" type="button" class="btn btn-outline-light btn-sm btn-clipboard" data-clipboard-target="#dois">Copiar</button>
+        </div>
+        <kbd id="dois" class="command rounded">free -m</kbd>
+    </div>
     <h3 class="center">Fazer montagem do HD Externo</h3>
     <p>
         Recomendo seguir a documentacao oficial que e muito detalhada caso seu hd esteja formatado em ext4, ntfs, etc. Nao esqueca de fazer a parte para montar automaticamente apos reboot. https://www.raspberrypi.org/documentation/configuration/external-storage.md
@@ -32,21 +36,30 @@
     <p>
         Instala o SMB
     </p>
-    <code class="rounded">
-        sudo apt-get install samba samba-common-bin
-    </code>
+    <div class="rounded background-background mb-3">
+        <div class="mt-1 mf-1" style="position: relative; float: right;">
+            <button id="btn" type="button" class="btn btn-outline-light btn-sm btn-clipboard" data-clipboard-target="#tres">Copiar</button>
+        </div>
+        <kbd id="tres" class="command rounded">sudo apt-get install samba samba-common-bin</kbd>
+    </div>
     <p>
         Cria a pasta que deseja compartilhar no SMB(ou nao, caso queira utilizar que ja existe), exemplo:
     </p>
-    <code class="rounded">
-        mkdir /compartilhado
-    </code>
+    <div class="rounded background-background mb-3">
+        <div class="mt-1 mf-1" style="position: relative; float: right;">
+            <button id="btn" type="button" class="btn btn-outline-light btn-sm btn-clipboard" data-clipboard-target="#quatro">Copiar</button>
+        </div>
+        <kbd id="quatro" class="command rounded">mkdir /compartilhado/kbd>
+    </div>
     <p>
         Edita o arquivo de configuracao do smb para adicionar a pasta que criamos:
     </p>
-    <code class="rounded">
-        sudo nano /etc/samba/smb.conf
-    </code>
+    <div class="rounded background-background mb-3">
+        <div class="mt-1 mf-1" style="position: relative; float: right;">
+            <button id="btn" type="button" class="btn btn-outline-light btn-sm btn-clipboard" data-clipboard-target="#cinco">Copiar</button>
+        </div>
+        <kbd id="cinco" class="command rounded">sudo nano /etc/samba/smb.conf</kbd>
+    </div>
     <p>
         Aperta a tecla page down ate descer ao final do arquivo e adicione isso (editando a primeira linha com o nome que quiser e a segunda com o caminho da pasta que quer compartilhar):
     </p>
@@ -63,15 +76,21 @@ public=no
     <p>
         Aperte as teclas Ctrl + X, depois y depois enter para salvar a configuracao. Crie um usuario para acesso do smb com o nome que desejar (no exemplo usado, usuario pi):
     </p>
-    <code class="rounded">
-        sudo smbpasswd -a pi
-    </code>
+    <div class="rounded background-background mb-3">
+        <div class="mt-1 mf-1" style="position: relative; float: right;">
+            <button id="btn" type="button" class="btn btn-outline-light btn-sm btn-clipboard" data-clipboard-target="#sete">Copiar</button>
+        </div>
+        <kbd id="sete" class="command rounded">sudo smbpasswd -a pi</kbd>
+    </div>
     <p>
         Por fim reinicie o servico:
     </p>
-    <code class="rounded">
-        sudo systemctl restart smbd
-    </code>
+    <div class="rounded background-background mb-3">
+        <div class="mt-1 mf-1" style="position: relative; float: right;">
+            <button id="btn" type="button" class="btn btn-outline-light btn-sm btn-clipboard" data-clipboard-target="#oito">Copiar</button>
+        </div>
+        <kbd id="oito" class="command rounded">sudo systemctl restart smbd</kbd>
+    </div>
     <p>
         Voce pode acessar abrindo no explorador de arquivo do windows o endereco <b>\\ip.do.seu.raspberry\raspsmb</b>(ou nome que voce deu na primeira linha da configuracao)
     </p>
