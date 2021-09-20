@@ -227,6 +227,15 @@ pre {
     overflow: auto;
     color: #ff79c6;
 }
+.command{
+    padding: 1rem;
+    color: #ff79c6;
+    background-color: #282a36;
+    display: block;
+}
 
+.command::before {
+    content: "$ ";
+}
 
 
