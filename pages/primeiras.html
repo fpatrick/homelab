@@ -1,14 +1,6 @@
 <div class="mt-2">
     <h2 class="center">Ajustes apos instalacao</h2>
     <p>Guia de procedimentos que podem ser uteis apos instalacao limpa do sistema. (Testado no Raspberry OS lite).</p>
-
-    <div class="rounded background-background">
-        <div class="mt-1 mf-1" style="position: relative; float: right;">
-            <button id="btn" type="button" class="btn btn-outline-light btn-sm btn-clipboard" data-clipboard-target="#copy">Copiar</button>
-        </div>
-        <kbd id="copy" class="command rounded">Codigo de teste botao copiar</kbd>
-    </div>
-
     <h3 class="center">Desativar swap</h3>
     <p>
         Extremamente recomendado, especialmente para quem usa cartao SD. Por padrao o raspbian os vem com 100 MB de memoria swap ativado. Caso voce esteja utilizando cartao SD, SSD ou tenha um raspberry com no minimo 4GB de ram, e recomendado que o swap deja desativado. Por que? Com 4 GB de ram voce difilmente ira precisar do swap, caso esteja utilizando SD ou SSD e ainda pior, pois ele encurta a vida util refazendo escritas. Para desativar execute o codigo:
@@ -64,7 +56,7 @@
         Aperta a tecla page down ate descer ao final do arquivo e adicione isso (editando a primeira linha com o nome que quiser e a segunda com o caminho da pasta que quer compartilhar):
     </p>
     <pre>
-        <code class="rounded">
+        <code class="rounded ml-2">
 [raspsmb]
 path = /compartilhado
 writeable=Yes
