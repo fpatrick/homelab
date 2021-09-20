@@ -5,11 +5,11 @@
     <p>
         Extremamente recomendado, especialmente para quem usa cartao SD. Por padrao o raspbian os vem com 100 MB de memoria swap ativado. Caso voce esteja utilizando cartao SD, SSD ou tenha um raspberry com no minimo 4GB de ram, e recomendado que o swap deja desativado. Por que? Com 4 GB de ram voce difilmente ira precisar do swap, caso esteja utilizando SD ou SSD e ainda pior, pois ele encurta a vida util refazendo escritas. Para desativar execute o codigo:
     </p>
-    <code>sudo systemctl disable dphys-swapfile.service</code>
+    <code class="rounded">sudo systemctl disable dphys-swapfile.service</code>
     <p>
         Reinicie e execute o seguinte codigo para confirmar que swap agora esta zerado:
     </p>
-    <code>free -m</code>
+    <code class="rounded">free -m</code>
     <h3 class="center">Fazer montagem do HD Externo</h3>
     <p>
         Recomendo seguir a documentacao oficial que e muito detalhada caso seu hd esteja formatado em ext4, ntfs, etc. Nao esqueca de fazer a parte para montar automaticamente apos reboot. https://www.raspberrypi.org/documentation/configuration/external-storage.md
@@ -18,26 +18,26 @@
     <p>
         Instala o SMB
     </p>
-    <code>
+    <code class="rounded">
         sudo apt-get install samba samba-common-bin
     </code>
     <p>
         Cria a pasta que deseja compartilhar no SMB(ou nao, caso queira utilizar que ja existe), exemplo:
     </p>
-    <code>
+    <code class="rounded">
         mkdir /compartilhado
     </code>
     <p>
         Edita o arquivo de configuracao do smb para adicionar a pasta que criamos:
     </p>
-    <code>
+    <code class="rounded">
         sudo nano /etc/samba/smb.conf
     </code>
     <p>
         Aperta a tecla page down ate descer ao final do arquivo e adicione isso (editando a primeira linha com o nome que quiser e a segunda com o caminho da pasta que quer compartilhar):
     </p>
     <pre>
-        <code>
+        <code class="rounded">
 [raspsmb]
 path = /compartilhado
 writeable=Yes
@@ -49,13 +49,13 @@ public=no
     <p>
         Aperte as teclas Ctrl + X, depois y depois enter para salvar a configuracao. Crie um usuario para acesso do smb com o nome que desejar (no exemplo usado, usuario pi):
     </p>
-    <code>
+    <code class="rounded">
         sudo smbpasswd -a pi
     </code>
     <p>
         Por fim reinicie o servico:
     </p>
-    <code>
+    <code class="rounded">
         sudo systemctl restart smbd
     </code>
     <p>

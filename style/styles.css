@@ -220,23 +220,12 @@ h3 {
 code {
     background-color: #282a36;
     color: #ff79c6;
-    /* font-size: 18px; */
-    padding: 5px;
-    border-radius: 25px;
-    font-family: monospace, monospace;
-    margin-bottom: 10px;
 }
 
 pre {
     background-color: #282a36;
-    border-radius: 25px;
     overflow: auto;
     color: #ff79c6;
-}
-
-pre code{
-    padding: 0px;
-    border-radius: 0px;
 }
 
 
